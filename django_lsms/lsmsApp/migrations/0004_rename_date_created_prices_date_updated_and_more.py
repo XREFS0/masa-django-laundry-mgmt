@@ -1,0 +1,31 @@
+"""
+Developed by MASA
+All Rights Reserved.
+"""
+
+from django.db import migrations
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ("lsmsApp", "0003_stockin"),
+    ]
+
+    operations = [
+        migrations.RenameField(
+            model_name="prices",
+            old_name="date_created",
+            new_name="date_updated",
+        ),
+        migrations.RenameField(
+            model_name="products",
+            old_name="date_created",
+            new_name="date_updated",
+        ),
+        migrations.RenameField(
+            model_name="stockin",
+            old_name="date_created",
+            new_name="date_updated",
+        ),
+    ]
